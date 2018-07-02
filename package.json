@@ -1,6 +1,6 @@
 {
   "name": "umzug-postgres-storage",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "./dist/umzug-postgres-storage.js",
   "module": "./src/umzug-postgres-storage.js",
   "babel": {
