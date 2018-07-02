@@ -1,0 +1,35 @@
+{
+  "name": "umzug-postgres-storage",
+  "version": "0.0.0",
+  "main": "./dist/umzug-postgres-storage.js",
+  "module": "./src/umzug-postgres-storage.js",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node ./test.js"
+  },
+  "dependencies": {
+    "q": "^1.5.1",
+    "pg": "^7.4.3",
+    "pg-native": "^3.0.0"
+  },
+  "devDependencies": {
+    "webpack": "4.6.0",
+    "tape": "^4.9.1",
+    "babel-core": "^6.26.3",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.5.1"
+  }
+}
