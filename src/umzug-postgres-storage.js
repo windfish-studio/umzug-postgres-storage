@@ -13,7 +13,8 @@ class UmzugPostgresStorage {
     }
 
     dbConn(){
-        return new q.Promise(function (resolve, reject) {
+        if (this.dbConnPromise) return this.dbConnPromise
+        return this.dbConnPromise = new q.Promise(function (resolve, reject) {
             var pool = new pg.Pool(this.config.database);
             pool.connect(function (err, client, done) {
                 resolve({
