@@ -1,5 +1,6 @@
 {
   "name": "@windfish-studio/umzug-postgres-storage",
+  "version": "1.0.0",
   "main": "./dist/umzug-postgres-storage.js",
   "module": "./src/umzug-postgres-storage.js",
   "repository": {
