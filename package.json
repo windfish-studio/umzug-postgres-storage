@@ -1,8 +1,11 @@
 {
-  "name": "umzug-postgres-storage",
-  "version": "0.0.0",
+  "name": "@windfish-studio/umzug-postgres-storage",
   "main": "./dist/umzug-postgres-storage.js",
   "module": "./src/umzug-postgres-storage.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/windfish-studio/umzug-postgres-storage.git",
+  }
   "babel": {
     "presets": [
       [
