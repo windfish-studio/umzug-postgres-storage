@@ -31,7 +31,7 @@ class UmzugPostgresStorage {
                 );
             `);
 
-            ret_p.then(function () {
+            ret_p.fin(function () {
                _o.done();
                _o.pool.end();
             });
@@ -45,7 +45,7 @@ class UmzugPostgresStorage {
             .then(function () {
                 return this.dbConn().then(function (_o) {
                     var query_p = _o.client.query(sql);
-                    query_p.then(function () {
+                    query_p.fin(function () {
                         _o.done();
                         _o.pool.end();
                     });
