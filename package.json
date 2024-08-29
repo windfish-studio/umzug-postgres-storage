@@ -30,7 +30,7 @@
     "pg-native": "^3.0.0"
   },
   "devDependencies": {
-    "webpack": "4.6.0",
+    "webpack": "5.94.0",
     "tape": "^4.9.1",
     "babel-core": "^6.26.3",
     "babel-cli": "^6.26.0",
